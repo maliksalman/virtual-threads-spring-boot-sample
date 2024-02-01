@@ -1,0 +1,7 @@
+for i in {1..30}; do curl -s -X PUT http://localhost:9091/exchange/symbols/100; curl -s -X PUT http://localhost:9092/exchange/symbols/100; sleep 15; done
+
+samalikY94MW:~/Workspaces/optum/threads/stock-broker $ SPRING_PROFILES_ACTIVE=virtual java -jar target/stock-broker-1.0.jar
+
+samalikY94MW:~/Workspaces/optum/threads/stock-exchange $ SPRING_PROFILES_ACTIVE=aaa,virtual java -jar target/stock-exchange-1.0.jar
+
+samalikY94MW:~/Workspaces/optum/threads/stock-exchange $ SPRING_PROFILES_ACTIVE=bbb,virtual java -jar target/stock-exchange-1.0.jar

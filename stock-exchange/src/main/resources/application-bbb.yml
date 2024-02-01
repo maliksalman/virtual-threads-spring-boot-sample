@@ -1,0 +1,12 @@
+config:
+  exchange-name: BBB
+  delay-duration: 100ms
+  generator-prefix: B
+
+management:
+  wavefront:
+    application:
+      service-name: exchange-BBB
+
+server:
+  port: 9092

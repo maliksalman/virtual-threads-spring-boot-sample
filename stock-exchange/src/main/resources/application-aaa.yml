@@ -1,0 +1,12 @@
+config:
+  exchange-name: AAA
+  delay-duration: 100ms
+  generator-prefix: A
+
+management:
+  wavefront:
+    application:
+      service-name: exchange-AAA
+
+server:
+  port: 9091
