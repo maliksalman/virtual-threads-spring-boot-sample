@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics,prometheus
+  metrics:
+    tags:
+      application: stock-broker
+      instance: default
+  prometheus:
+    metrics:
+      export:
+        enabled: true

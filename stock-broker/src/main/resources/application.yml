@@ -3,15 +3,14 @@ springdoc:
     path: /
 
 management:
-  wavefront:
-    uri: https://vmware.wavefront.com
-    api-token: fc0a711e-0471-417c-a93d-7af88c9e711c
-    application:
-      name: stocks
-      service-name: broker
+  prometheus:
     metrics:
       export:
-        step: 5s
+        enabled: false
+  wavefront:
+    metrics:
+      export:
+        enabled: false
   endpoints:
     metrics:
       enabled: true
@@ -21,5 +20,5 @@ management:
 
 config:
   exchanges:
-    AAA: http://localhost:9091
-    BBB: http://localhost:9092
+    aaa: http://localhost:9091
+    bbb: http://localhost:9092

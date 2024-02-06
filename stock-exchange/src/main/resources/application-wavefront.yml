@@ -1,0 +1,11 @@
+management:
+  wavefront:
+    uri: https://vmware.wavefront.com
+    api-token: fc0a711e-0471-417c-a93d-7af88c9e711c
+    application:
+      name: stocks
+      service-name: broker
+    metrics:
+      export:
+        step: 5s
+        enabled: true
