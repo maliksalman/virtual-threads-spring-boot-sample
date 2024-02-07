@@ -6,4 +6,4 @@ else
   export SPRING_PROFILES_ACTIVE=prometheus,$1
 fi
 
-java -jar stock-exchange/target/stock-broker-1.0.jar
+java -jar stock-exchange/target/stock-exchange-1.0.jar
