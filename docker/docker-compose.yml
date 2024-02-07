@@ -6,8 +6,7 @@ services:
     image: grafana/grafana:10.3.1
     container_name: grafana
     volumes:
-      - "./provisioning/dashboards:/etc/grafana/provisioning/dashboards"
-      - "./provisioning/docker-compose-datasources:/etc/grafana/provisioning/datasources"
+      - "./provisioning:/etc/grafana/provisioning"
       - "./grafana.ini:/etc/grafana/grafana.ini"
     ports:
     - "3000:3000"
