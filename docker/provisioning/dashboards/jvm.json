@@ -3192,7 +3192,6 @@
       }
     }
   ],
-  "refresh": "30s",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
@@ -3326,8 +3325,9 @@
       }
     ]
   },
+  "refresh": "5s",
   "time": {
-    "from": "now-15m",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {
