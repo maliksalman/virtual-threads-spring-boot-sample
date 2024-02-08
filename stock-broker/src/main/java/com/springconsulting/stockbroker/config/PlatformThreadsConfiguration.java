@@ -13,8 +13,15 @@ import java.util.concurrent.Executors;
 @EnableScheduling
 public class PlatformThreadsConfiguration {
 
+    @Profile("!fixed")
     @Bean(destroyMethod = "shutdown")
-    public ExecutorService executorService() {
+    public ExecutorService cachedExecutorService() {
         return Executors.newCachedThreadPool();
+    }
+
+    @Profile("fixed")
+    @Bean(destroyMethod = "shutdown")
+    public ExecutorService fixedExecutorService() {
+        return Executors.newFixedThreadPool(1024);
     }
 }
