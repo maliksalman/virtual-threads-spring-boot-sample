@@ -1,6 +1,6 @@
 config:
   exchange-name: aaa
-  delay-duration: 100ms
+  delay-duration: 10ms
   generator-prefix: A
 
 management:

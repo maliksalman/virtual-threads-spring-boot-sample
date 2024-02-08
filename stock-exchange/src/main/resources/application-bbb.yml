@@ -1,6 +1,6 @@
 config:
   exchange-name: bbb
-  delay-duration: 100ms
+  delay-duration: 10ms
   generator-prefix: B
 
 management:
